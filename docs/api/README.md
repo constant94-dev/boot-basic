@@ -1,10 +1,11 @@
-### Spring Controller FLow
+### Spring Controller Summary FLow
 
 ![img](../../images/springbootControllerFlow.png)
 
-### GET API
 
 ---
+### GET API
+
 `@GetMapping`
 + 별도의 파라미터 없이 GET API를 호출하는 경우 사용
 
@@ -61,7 +62,6 @@ public String getRequestParam2(@RequestParam Map<String, String> param){
 ```
 
 `DTO 사용`
-
 + GET 형식 요청에서 쿼리 문자열을 전달하기 위해 사용되는 방법
 + key와 value가 정해져있지만, 받아야할 파라미터가 많을 경우 DTO 객체를 사용
 
@@ -79,3 +79,35 @@ public class MemberDTO {
 ```
 
 ---
+
+### POST API
+
+`@PostMapping`
++ POST API를 제작하기 위해 사용되는 어노테이션(Annotation)
++ 리소스를 추가하기 위해 사용되는 API
++ 일반적으로 추가하고자 하는 Resource를 http body에 추가하여 서버에 요청
++ 그렇기 때문에 @RequestBody를 이용하여 body에 담겨있는 값을 받아야 함
+
+```java
+@PostMapping(value = "/member")
+public String postMember(@RequestBody Map<String, Object> postData){
+    StringBuilder sb = new StringBuilder();
+    
+    postData.entrySet().forEach(map -> {
+        sb.append(map.getKey() + ":" + map.getValue() + "\n");
+    });
+    
+    return sb.toString();
+}
+```
+
+`DTO 사용`
++ key와 value가 정해져있지만, 받아야할 파라미터가 많을 경우 DTO 객체를 사용 
+
+```java
+@PostMapping(value = "/member2")
+public String postMemberDto(@RequestBody MemberDTO memberDTO){
+    return memberDTO.toString();
+}
+```
+

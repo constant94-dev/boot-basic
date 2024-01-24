@@ -10,3 +10,8 @@
 + PUT/DELETE API 관련 어노테이션 학습
 + Springdoc 라이브러리 사용 API 문서화
 + Project Lombok 라이브러리 사용 반복 코드 제거
+
+<strong>24.01.25</strong>
++ MySQL 데이터베이스 적용
++ ORM, JPA, Spring Data JPA 적용
++ VO, DTO 차이점 학습

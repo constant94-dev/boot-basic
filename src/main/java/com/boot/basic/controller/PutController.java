@@ -1,6 +1,6 @@
 package com.boot.basic.controller;
 
-import com.boot.basic.dto.MemberDTO;
+import com.boot.basic.data.dto.MemberDTO;
 import java.util.Map;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

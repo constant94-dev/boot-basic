@@ -1,4 +1,4 @@
-package com.boot.basic.dto;
+package com.boot.basic.data.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -77,3 +77,4 @@ Temporary Items
 ### Spring gradle ###
 gradlew
 gradlew.bat
+/src/main/resources/application.yml

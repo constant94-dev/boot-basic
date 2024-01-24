@@ -184,3 +184,4 @@ public String postMemberDto(@RequestBody MemberDTO memberDTO){
   + @EqualsAndHashCode
 + 하지만, 불필요한 어노테이션을 포함할 수 있기 때문에 유의해야함
 
+---

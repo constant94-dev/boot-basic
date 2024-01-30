@@ -25,6 +25,8 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
 	// maven repo mysql
 	implementation('com.mysql:mysql-connector-j:8.0.33')
+	// maven repo validation
+	implementation('org.springframework.boot:spring-boot-starter-validation')
 
 	// maven repo lombok
 	compileOnly('org.projectlombok:lombok:1.18.30')

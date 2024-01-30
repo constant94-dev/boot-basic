@@ -15,3 +15,13 @@
 + MySQL 데이터베이스 적용
 + ORM, JPA, Spring Data JPA 적용
 + VO, DTO 차이점 학습
+
+<strong>24.01.29</strong>
++ Logback 적용
++ Validation 적용
++ Exception 적용
+  + 사용자 정의 예외 처리
+  + Spring 제공 예외 처리
+
+<strong>24.01.30</strong>
++ 테스트 코드 적용

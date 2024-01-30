@@ -1,5 +1,7 @@
 package com.boot.basic.controller;
 
+import com.boot.basic.common.exception.BootBasicException;
+import com.boot.basic.common.exception.Exceptions;
 import com.boot.basic.data.dto.ProductDTO;
 import com.boot.basic.service.ProductService;
 import jakarta.validation.Valid;
@@ -50,4 +52,10 @@ public class ProductController {
 
     @DeleteMapping("/product/{productId}")
     public ProductDTO deleteProduct(@PathVariable String productId){ return null;}
+
+    @PostMapping("/product/exception")
+    public void exceptionTest() throws BootBasicException{
+        throw new BootBasicException(Exceptions.PRODUCT, HttpStatus.FORBIDDEN, "의도한 에러가 발생하였습니다.");
+    }
+
 }
